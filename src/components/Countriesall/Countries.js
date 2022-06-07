@@ -21,15 +21,23 @@ const Countries = () => {
 
     // console.log({country,id:uuidv4()}) 
 
-    if(loading) return <img src="/loading.gif" alt="loading" />
+    // if(loading) return <img src="/loading.gif" alt="loading" />
 
     const handleSearch =(e)=>{
         e.preventDefault();
 
-        console.log(e.target.value);
+        // console.log(e.target.value);
+        const nameValue = e.target.value.toLowerCase()
+       const filtercountries =  country?.filter(searchfilter => {
+            const Cname =searchfilter.name?.common.toLowerCase();
+            return Cname.includes(nameValue)
+
+        });
+        setCountry(filtercountries)
     
     }
 
+    //filter item is working 
     const removecountry =(name)=>{
        const filteritem = country?.filter(filteritem=> filteritem?.name?.common!==name);
 
@@ -38,6 +46,7 @@ const Countries = () => {
     }
     return (
         <div>
+            {loading && <p>loading ....</p>}
             <div className="search-section container my-4">
                 <div className="row">
                     <div className="col-md-4 offset-md-4">
@@ -56,20 +65,20 @@ const Countries = () => {
                 </div>
             </div>
 
-{
-    !loading &&  
-     <div className="country-body">
-                 <div className="container">
-                    <div className="row"> 
-                    {
-                        country?.map((item,index)=> <Country key={index} item={item} removecountry={removecountry}/>)
-                    }
-                        
+                {
+                  
+                    <div className="country-body">
+                                <div className="container">
+                                    <div className="row"> 
+                                    {
+                                        country?.map((item,index)=> <Country key={index} item={item} removecountry={removecountry}/>)
+                                    }
+                                        
+                                    </div>
+                                    
+                                </div>
                     </div>
-                    
-                </div>
-    </div>
-}
+                }
           
         </div>
     );
