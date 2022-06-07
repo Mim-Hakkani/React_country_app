@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Countries from './components/Countriesall/Countries';
 import ContextApiMain from './components/Propsdrilling/ContextApi';
+import UserDetails from './components/PropsType/UserDetails';
 
 
 function App() {
@@ -21,7 +22,12 @@ function App() {
 
        {/* this area is used for context apis  */}
 
-       <ContextApiMain />
+       {/* <ContextApiMain /> */}
+
+
+       {/* props type example  */}
+
+       <UserDetails />
 
      
     
