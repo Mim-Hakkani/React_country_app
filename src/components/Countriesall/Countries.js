@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Country from './Country';
 
 const Countries = () => {
     
@@ -24,8 +25,18 @@ const Countries = () => {
                                  />
                       
                             </form>
-                            <p>ami to nai ree</p>
+                          
                     </div>
+                </div>
+            </div>
+
+
+            <div className="country-body">
+                <div className="container">
+                    <div className="row"> 
+                         <Country />
+                    </div>
+                    
                 </div>
             </div>
         </div>
