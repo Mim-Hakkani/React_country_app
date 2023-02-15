@@ -13,6 +13,7 @@ const UserDetails = () => {
     return (
         <div>
             <SingleDetails name={name} count={count} likes={likes}/>
+            
         </div>
     );
 };
