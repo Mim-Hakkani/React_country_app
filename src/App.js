@@ -7,7 +7,7 @@ import Parent from './components/ContextApi/Parent';
 // import ContextApiMain from './components/Propsdrilling/ContextApi';
 // import UserDetails from './components/PropsType/UserDetails';
 // import ReducerHook from './components/useReducerHook/ReducerHook';
-// import ReducerPratices from './components/useReducerHook/ReducerPratices';
+import ReducerPratices from './components/useReducerHook/ReducerPratices';
 
 
 
@@ -76,15 +76,15 @@ function App() {
 
        {/* <ReducerHook /> */}
 
-       {/* <ReducerPratices /> */}
+       <ReducerPratices />
 
        {/* <TestEditor /> */}
 
-      <COUNTER_CONTEXT.Provider value={value}> 
+      {/* <COUNTER_CONTEXT.Provider value={value}> 
        <div>
         <Parent />
        </div>
-      </COUNTER_CONTEXT.Provider>
+      </COUNTER_CONTEXT.Provider> */}
      
     
     </>
