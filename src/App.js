@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { createContext, useState } from 'react';
 import './App.css';
+import ReducerForm from './components/BootstrapForm/ReducerForm';
 import Parent from './components/ContextApi/Parent';
 // import Countries from './components/Countriesall/Countries';
 // import TestEditor from './components/editorTest/TestEditor';
@@ -76,7 +77,7 @@ function App() {
 
        {/* <ReducerHook /> */}
 
-       <ReducerPratices />
+       {/* <ReducerPratices /> */}
 
        {/* <TestEditor /> */}
 
@@ -85,6 +86,9 @@ function App() {
         <Parent />
        </div>
       </COUNTER_CONTEXT.Provider> */}
+
+
+      <ReducerForm />
      
     
     </>
