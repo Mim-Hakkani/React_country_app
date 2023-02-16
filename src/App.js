@@ -1,14 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import { createContext, useState } from 'react';
 import './App.css';
-import Countries from './components/Countriesall/Countries';
-import TestEditor from './components/editorTest/TestEditor';
-import ContextApiMain from './components/Propsdrilling/ContextApi';
-import UserDetails from './components/PropsType/UserDetails';
-import ReducerHook from './components/useReducerHook/ReducerHook';
-import ReducerPratices from './components/useReducerHook/ReducerPratices';
+import Parent from './components/ContextApi/Parent';
+// import Countries from './components/Countriesall/Countries';
+// import TestEditor from './components/editorTest/TestEditor';
+// import ContextApiMain from './components/Propsdrilling/ContextApi';
+// import UserDetails from './components/PropsType/UserDetails';
+// import ReducerHook from './components/useReducerHook/ReducerHook';
+// import ReducerPratices from './components/useReducerHook/ReducerPratices';
 
+
+
+export const COUNTER_CONTEXT = createContext()
 
 function App() {
+
+  const [count,setCount] =useState(0)
+  const value = { count ,setCount}
+
   return (
    <>
      {/* <Countries /> */}
@@ -67,10 +76,15 @@ function App() {
 
        {/* <ReducerHook /> */}
 
-       <ReducerPratices />
+       {/* <ReducerPratices /> */}
 
        {/* <TestEditor /> */}
 
+      <COUNTER_CONTEXT.Provider value={value}> 
+       <div>
+        <Parent />
+       </div>
+      </COUNTER_CONTEXT.Provider>
      
     
     </>
