@@ -1,9 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Countries from './components/Countriesall/Countries';
+import TestEditor from './components/editorTest/TestEditor';
 import ContextApiMain from './components/Propsdrilling/ContextApi';
 import UserDetails from './components/PropsType/UserDetails';
 import ReducerHook from './components/useReducerHook/ReducerHook';
+import ReducerPratices from './components/useReducerHook/ReducerPratices';
 
 
 function App() {
@@ -63,7 +65,11 @@ function App() {
         }}>Golam Hakkani Mim</p>
        </div> */}
 
-       <ReducerHook />
+       {/* <ReducerHook /> */}
+
+       <ReducerPratices />
+
+       {/* <TestEditor /> */}
 
      
     
