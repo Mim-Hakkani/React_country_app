@@ -4,6 +4,8 @@ import './App.css';
 import ReducerForm from './components/BootstrapForm/ReducerForm';
 import Parent from './components/ContextApi/Parent';
 import Products from './components/products/Products';
+import Footer from './components/share/Footer';
+import Header from './components/share/Header';
 // import Countries from './components/Countriesall/Countries';
 // import TestEditor from './components/editorTest/TestEditor';
 // import ContextApiMain from './components/Propsdrilling/ContextApi';
@@ -90,8 +92,13 @@ function App() {
 
 
       {/* <ReducerForm /> */}
+      <Header />
 
       <Products />
+
+      <Footer />
+
+
      
     
     </>
