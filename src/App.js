@@ -3,6 +3,7 @@ import { createContext, useState } from 'react';
 import './App.css';
 import ReducerForm from './components/BootstrapForm/ReducerForm';
 import Parent from './components/ContextApi/Parent';
+import Products from './components/products/Products';
 // import Countries from './components/Countriesall/Countries';
 // import TestEditor from './components/editorTest/TestEditor';
 // import ContextApiMain from './components/Propsdrilling/ContextApi';
@@ -89,6 +90,8 @@ function App() {
 
 
       {/* <ReducerForm /> */}
+
+      <Products />
      
     
     </>

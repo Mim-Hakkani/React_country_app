@@ -3,107 +3,143 @@
     {
       "id": "P001",
       "price": 899.99,
-      "image": "https://example.com/images/smartphone.jpg",
+      "image": "https://picsum.photos/id/1018/536/354",
       "title": "High-End Smartphone",
       "description": "A cutting-edge smartphone with the latest features and advanced technology."
     },
     {
       "id": "P002",
       "price": 1499.99,
-      "image": "https://example.com/images/laptop.jpg",
+      "image": "https://picsum.photos/id/1019/536/354",
       "title": "Powerful Laptop",
       "description": "A high-performance laptop with a sleek design and long battery life."
     },
     {
       "id": "P003",
       "price": 129.99,
-      "image": "https://example.com/images/headphones.jpg",
+      "image": "https://picsum.photos/id/1020/536/354",
       "title": "Wireless Headphones",
       "description": "Premium headphones with noise-cancellation technology and long battery life."
     },
     {
       "id": "P004",
       "price": 399.99,
-      "image": "https://example.com/images/tablet.jpg",
+      "image": "https://picsum.photos/id/1021/536/354",
       "title": "Tablet Computer",
       "description": "A lightweight and versatile tablet computer with a high-resolution display."
     },
     {
       "id": "P005",
       "price": 249.99,
-      "image": "https://example.com/images/smartwatch.jpg",
+      "image": "https://picsum.photos/id/1022/536/354",
       "title": "Smartwatch",
       "description": "A stylish and functional smartwatch with a range of features, including fitness tracking and messaging."
     },
     {
       "id": "P006",
       "price": 39.99,
-      "image": "https://example.com/images/speakers.jpg",
+      "image": "https://picsum.photos/id/1023/536/354",
       "title": "Bluetooth Speakers",
       "description": "High-quality wireless speakers with clear sound and a long battery life."
     },
     {
       "id": "P007",
       "price": 899.99,
-      "image": "https://example.com/images/camera.jpg",
+      "image": "https://picsum.photos/id/1024/536/354",
       "title": "Digital Camera",
       "description": "A professional-grade digital camera with high-resolution imaging and video capabilities."
     },
     {
       "id": "P008",
       "price": 199.99,
-      "image": "https://example.com/images/router.jpg",
+      "image": "https://picsum.photos/id/1025/536/354",
       "title": "Wireless Router",
       "description": "A high-performance wireless router with advanced security features and easy setup."
     },
     {
       "id": "P009",
       "price": 79.99,
-      "image": "https://example.com/images/keyboard.jpg",
+      "image": "https://picsum.photos/id/1026/536/354",
       "title": "Wireless Keyboard",
       "description": "A comfortable and responsive wireless keyboard with a long battery life."
     },
     {
       "id": "P010",
       "price": 699.99,
-      "image": "https://example.com/images/tv.jpg",
+      "image": "https://picsum.photos/id/1027/536/354",
       "title": "Smart TV",
       "description": "A high-definition smart TV with a large screen, streaming capabilities, and built-in voice control."
     },
     {
       "id": "P011",
       "price": 119.99,
-      "image": "https://example.com/images/mouse.jpg",
+      "image": "https://picsum.photos/id/1028/536/354",
       "title": "Wireless Mouse",
       "description": "A precise and comfortable wireless mouse with a long battery life and easy connectivity."
     },
     {
-      "id": "P012",
+      "id": "P001",
+      "price": 899.99,
+      "image": "https://dummyimage.com/400x400/000/fff&text=High-End+Smartphone",
+      "title": "High-End Smartphone",
+      "description": "A cutting-edge smartphone with the latest features and advanced technology."
+    },
+    {
+      "id": "P002",
+      "price": 1499.99,
+      "image": "https://dummyimage.com/400x400/000/fff&text=Powerful+Laptop",
+      "title": "Powerful Laptop",
+      "description": "A high-performance laptop with a sleek design and long battery life."
+    },
+    {
+      "id": "P003",
+      "price": 129.99,
+      "image": "https://dummyimage.com/400x400/000/fff&text=Wireless+Headphones",
+      "title": "Wireless Headphones",
+      "description": "Premium headphones with noise-cancellation technology and long battery life."
+    },
+    {
+      "id": "P004",
       "price": 399.99,
-      "image": "https://example.com/images/gaming-console.jpg",
-      "title": "Gaming Console" 
+      "image": "https://dummyimage.com/400x400/000/fff&text=Tablet+Computer",
+      "title": "Tablet Computer",
+      "description": "A lightweight and versatile tablet computer with a high-resolution display."
     },
     {
-      "id": "P013",
-      "price": 149.99,
-      "image": "https://example.com/images/monitor.jpg",
-      "title": "Computer Monitor",
-      "description": "A high-quality computer monitor with a large screen and advanced features for productivity and entertainment."
+      "id": "P005",
+      "price": 249.99,
+      "image": "https://dummyimage.com/400x400/000/fff&text=Smartwatch",
+      "title": "Smartwatch",
+      "description": "A stylish and functional smartwatch with a range of features, including fitness tracking and messaging."
     },
     {
-      "id": "P014",
-      "price": 69.99,
-      "image": "https://example.com/images/printer.jpg",
-      "title": "Wireless Printer",
-      "description": "A fast and reliable wireless printer with versatile printing capabilities and easy setup."
+      "id": "P006",
+      "price": 39.99,
+      "image": "https://dummyimage.com/400x400/000/fff&text=Bluetooth+Speakers",
+      "title": "Bluetooth Speakers",
+      "description": "High-quality wireless speakers with clear sound and a long battery life."
     },
     {
-      "id": "P015",
-      "price": 29.99,
-      "image": "https://example.com/images/usb-drive.jpg",
-      "title": "USB Flash Drive",
-      "description": "A high-speed and portable USB flash drive with ample storage capacity and reliable data transfer."
+      "id": "P007",
+      "price": 899.99,
+      "image": "https://dummyimage.com/400x400/000/fff&text=Digital+Camera",
+      "title": "Digital Camera",
+      "description": "A professional-grade digital camera with high-resolution imaging and video capabilities."
+    },
+    {
+      "id": "P008",
+      "price": 199.99,
+      "image": "https://dummyimage.com/400x400/000/fff&text=Wireless+Router",
+      "title": "Wireless Router",
+      "description": "A high-performance wireless router with advanced security features and easy setup."
+    },
+    {
+      "id": "P009",
+      "price": 79.99,
+      "image": "https://dummyimage.com/400x400/000/fff&text=Wireless+Keyboard",
+      "title": "Wireless Keyboard",
+      "description": "A comfortable and responsive wireless keyboard with a long battery life."
     }
 ]
 }
-     
+   
