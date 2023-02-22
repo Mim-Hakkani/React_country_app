@@ -1,6 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
+
+  const cartlength = useSelector((state)=>state);
+  // console.log('ami header cart :: ', cartlength.cart);
+
     return (
         <div className='mb-4'>
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -12,10 +18,13 @@ const Header = () => {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
-          <a className="nav-link" href="# ">Home</a>
+          {/* <a className="nav-link" href="# ">Home</a> */}
+          <Link to="/" className="nav-link">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="# ">About</a>
+          {/* <a className="nav-link" href="# ">About</a> */}
+          <Link to="products">productsall</Link>
+          
         </li>
         <li className="nav-item">
           <a className="nav-link" href="# ">Search</a>
@@ -24,8 +33,12 @@ const Header = () => {
           <a className="nav-link" href="# ">Wishlist</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="# ">Cart <span className="badge bg-danger">3</span></a>
+          {/* <a className="nav-link" href="# ">Cart */}
+          <Link to="/cart" className="nav-link">Cart
+
+          { cartlength.cart.length && <span className="badge bg-danger">{cartlength.cart.length && cartlength.cart.length}</span>}</Link>
         </li>
+
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="# " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Products

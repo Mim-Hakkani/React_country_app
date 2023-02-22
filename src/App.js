@@ -1,8 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { createContext, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AddCart from './components/addToCart/AddCart';
 import ReducerForm from './components/BootstrapForm/ReducerForm';
 import Parent from './components/ContextApi/Parent';
+import Home from './components/home/Home';
+import NotFound from './components/notFound/NotFound';
 import Products from './components/products/Products';
 import Footer from './components/share/Footer';
 import Header from './components/share/Header';
@@ -92,12 +96,33 @@ function App() {
 
 
       {/* <ReducerForm /> */}
-      <Header />
+      
 
-      <Products />
 
-      <Footer />
 
+
+
+       <Header />
+    
+      <Routes>
+
+
+
+        <Route path='/' element={<Home/>}></Route>
+        <Route path="cart" element={<AddCart/>}></Route>
+        <Route path='products' element={<Products />}></Route>
+        {/* <Route path='posts' element={<Posts/>}>
+           
+          <Route path=':postId' element={<Post/>}></Route>
+
+        </Route>
+
+         <Route path='friend/:friendId' element={<FriendDetails/>}></Route> */}
+        <Route path="*" element={<NotFound/>}></Route>
+       
+      </Routes>
+    
+       <Footer />
 
      
     

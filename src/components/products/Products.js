@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import Product from './Product';
 
 
@@ -11,6 +12,10 @@ const Products = () => {
     }, [])
 
     // console.log('productsAll :: ', productsAll);
+
+    const {cart} = useSelector((state)=>state)
+    console.log("testItems :: ",cart);
+
     return (
         <div className="container">
             <div className="row">

@@ -1,12 +1,22 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { addToCart, removeToCart } from '../../redux/actionCreator/productAction';
+import { ADD_TO_CART } from '../../redux/actionTypes/actionTypes';
 
 
 const Product = ({product}) => {
 
     // for description truncate 
 
+    // const navigate = useNavigate()
+    const location = useLocation()
+    console.log('location :: ',location);
+    // console.log('ami navigate :: ' , navigate);
+
   const maxLength = 60; // Maximum length for the description
   
+  const dispatch =useDispatch()
  
     return (
 
@@ -24,7 +34,15 @@ const Product = ({product}) => {
       ? product?.description.slice(0, maxLength) + "..." // Append ellipsis if the description is longer than the maximum length
       : product?.description}
              </p>
-          <a href="# " className="btn btn-primary">Buy Now</a>
+
+             {
+              location.pathname==='/products' && <button className="btn btn-primary" onClick={()=>dispatch(addToCart(product))}>Buy Now</button>
+             }
+
+               {
+              location.pathname==='/cart' && <button className="btn btn-danger" onClick={()=>dispatch(removeToCart(product))}>Remove Cart</button>
+             }
+          
         </div>
       </div>
 
